@@ -8,12 +8,17 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"> -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 	<section class="header">
-		<a href="index.html"><img src="images/logo.png"></a>
-		<div class=nav-links>
+	<nav>
+		<a href="index.html"><img src="images/logo.png"></a>	
+		<div class=nav-links id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
 			<ul>
 				<li><a href="google.com">Home</a></li>
 				<li><a href="">About</a></li>
@@ -22,7 +27,34 @@
 				<li><a href="">Contact</a></li>
 			</ul>
 		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+
+	<div class="text-box">
+		<h1>World's Biggest University</h1>
+		<p>It offers higher education in Engineering, Technology, Architecture and Applied Sciences relevant to <br> the current and projected needs of the society. </p>
+		<a href="" class="hero-btn">Visit Us To Know More</a>
+	</div>
 	</section>
+
+		<!-- course -->
+		<section class="course">
+			<h1>Courses We Offer</h1>
+			<p>Oxford offers more than 350 graduate courses across the disciplines, with courses opening in new areas every year.</p>
+		</section>
+
+	<!-- javascript code for menu toggling -->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
 </body>
 </html>
 
