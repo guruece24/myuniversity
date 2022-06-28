@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>University Website</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"> -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="images/logo.png"></a>	
+		<div class=nav-links id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="google.com">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Course</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+
+	<h1>Contact Us</h1>
+
+	</section>
+
+
+	<!-- contact us content -->
+	<section class="location">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248580.15548369684!2d77.58013772862579!3d13.221240165132615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1cfe75446265%3A0x296c70e9a129418e!2sKempegowda%20International%20Airport%20Bengaluru!5e0!3m2!1sen!2sin!4v1656296712064!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<div class="contact-us">
+		<div class="row">
+		<div class="contact-col">
+			<div>
+			<i class="fa fa-home fa-2x"></i>
+			<span>
+				<h5>XYZ road, tower building</h5>
+				<p>Bangalore, Karnataka, India 345234</p>
+			</span>
+			</div>
+
+			<div>
+				<i class="fa fa-phone fa-2x"></i>
+				<span>
+					<h5>+91 9999999999</h5>
+					<p>Monay to Friday, 10AM to 5PM</p>
+				</span>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope-o fa-2x"></i>
+					<span>
+						<h5>email: info@university.co.in</h5>
+						<p>Email us your query</p>
+					</span>
+					</div>
+		
+			<a class="hero-btn red-btn" href="">Explore Now</a>
+		</div>
+		</div>
+
+		<div class="">
+			<img src="images/about.jpg"> 
+		</div>
+	</div>
+	</section>
+
+
+
+	<!-- footer -->
+	<section class="footer">
+		<h3>About Us</h3>
+		<p>We organize International Seminar Series periodically with experts from foreign Universities as resource   persons on specific topics of  Applied Sciences, Technology and Engineering. The Centre also conducts foreign  language courses such   as German, French and Japanese for faculty member and students.</p>
+
+		<div class="icons">
+			<i class="fa fa-facebook fa-2x"></i>
+			<i class="fa fa-twitter fa-2x"></i>
+			<i class="fa fa-instagram fa-2x"></i>
+			<i class="fa fa-linkedin fa-2x"></i>
+		</div>
+
+		<p>Made with 	<i class="fa fa-heart fa-2x"></i>  By Guruprasad, Web developer</p>
+	</section>
+				
+	<!-- javascript code for menu toggling -->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>
+
