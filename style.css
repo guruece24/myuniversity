@@ -153,7 +153,7 @@ p{
 } 
 
 .row{
-	margin-top: 5%;
+	margin-top: 3%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -464,6 +464,29 @@ h3{
 			border: 1px solid #ccc;
 			box-sizing: border-box;
 		}
+
+		/* <!-- blog content --> */
+		.blog-content {
+			width: 90%;
+			margin: auto;
+			padding: 60px 0;
+		}
+
+		.blog-left {
+			flex-basis: 65%;
+		}
+
+		.blog-left img{
+			width: 100%;
+		}
+
+		.blog-left h2{
+			color: #222;
+			font-weight: 600;
+			margin: 30px 0;
+			
+		}
+
 
 
 

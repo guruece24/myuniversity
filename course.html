@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>University Website</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"> -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="images/logo.png"></a>	
+		<div class=nav-links id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="course.html">Course</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Our Courses</h1>
+	</section>
+
+	<!-- course content -->
+	<section class="course">
+		<h1>Courses We Offer</h1>
+		<p>Oxford offers more than 350 graduate courses across the disciplines, with courses opening in new areas every year.</p>
+
+		<div class="row">
+			<div class="course-col">
+				<h3>Intermediate</h3>
+				<p>Gain an immersive understanding of the practices and processes used by a junior or associate data analyst in their day-to-day job</p>
+			</div>
+
+			<div class="course-col">
+				<h3>Degree</h3>
+				<p>Gain an immersive understanding of the practices and processes used by a junior or associate data analyst in their day-to-day job</p>
+			</div>
+
+			<div class="course-col">
+				<h3>Post Graduation</h3>
+				<p>Gain an immersive understanding of the practices and processes used by a junior or associate data analyst in their day-to-day job</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- facilities -->
+	<section class="facilities">
+		<h1>Our Facilities</h1>
+		<p>Learning is an enjoyable experience here, with experienced faculty, inspiring libraries and stimulating discussion rooms, large playgrounds and state-of-the-art labs. With a view to impart quality education SRM Institute of Science and Technology (formerly known as India University) functions at four  campuses.</p>
+
+		<div class="row">
+			<div class="facilities-col">
+				<img src="images/library.png">
+					<h3>World Class Library</h3>
+					<p>As one of the best established libraries according to International Standards, the University Library has a large collection of books covering various branches of Engineering and Technology, Medical and Health Sciences and Science and Humanities and its related fields. </p>
+			</div>
+
+			<div class="facilities-col">
+				<img src="images/basketball1.png">
+					<h3>Largest Playground</h3>
+					<p>As one of the best established libraries according to International Standards, the University Library has a large collection of books covering various branches of Engineering and Technology, Medical and Health Sciences and Science and Humanities and its related fields. </p>
+			</div>
+
+			<div class="facilities-col">
+				<img src="images/cafeteria.png">
+					<h3>Tasty and Healthy Food</h3>
+					<p>As one of the best established libraries according to International Standards, the University Library has a large collection of books covering various branches of Engineering and Technology, Medical and Health Sciences and Science and Humanities and its related fields. </p>
+			</div>
+		</div>
+</section>
+
+	<!-- footer -->
+	<section class="footer">
+		<h3>About Us</h3>
+		<p>We organize International Seminar Series periodically with experts from foreign Universities as resource   persons on specific topics of  Applied Sciences, Technology and Engineering. The Centre also conducts foreign  language courses such   as German, French and Japanese for faculty member and students.</p>
+
+		<div class="icons">
+			<i class="fa fa-facebook fa-2x"></i>
+			<i class="fa fa-twitter fa-2x"></i>
+			<i class="fa fa-instagram fa-2x"></i>
+			<i class="fa fa-linkedin fa-2x"></i>
+		</div>
+
+		<p>Made with 	<i class="fa fa-heart fa-2x"></i>  By Guruprasad, Web developer</p>
+	</section>
+				
+	<!-- javascript code for menu toggling -->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>
+
